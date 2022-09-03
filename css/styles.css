@@ -293,7 +293,7 @@ footer {
 .form-container .submit {
     background-color: #222;
     color: #FFF;
-    border: 1px solid transparent;
+    border: 15px solid transparent;
     width: 100px;
     position: relative;
     float: right;
@@ -304,7 +304,7 @@ footer {
 .form-container .submit:hover {
     background-color: #FFF;
     color: #222;
-    border: 1px solid #222;
+    border: 15px solid #222;
 }
 
 .copyright {
