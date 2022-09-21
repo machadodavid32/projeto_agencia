@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=sy2_fn63%wxd)q1)*$!k#r-&$8&fm=#np)j@v8vn&v_q)$-vj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True  # Enquanto o projeto estiver em desenvolvimento, deixar em True. Quando for ao ar, mudar para False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []  # Aqui devemos colocar o dominio
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
 ]
 
 MIDDLEWARE = [
