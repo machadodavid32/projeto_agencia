@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import index, projetos, contato, sobremim
+from core.views import index, projetos, contato, sobremim
 
 urlpatterns = [
      path('projetos', projetos),
