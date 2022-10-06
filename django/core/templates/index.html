@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfólio do David</title>
+        <link rel="stylesheet" href="{% static 'css\reset.css' %}">
+        <link rel="stylesheet" href="{% static 'css\styles.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>     
+        <header>
+            <nav id="navbar"> 
+                <ul class="nav-list" id="social-bar">
+                    <li><a href="https://www.linkedin.com/in/david-de-ara%C3%BAjo-machado-1b6a83104/">Linkedin</a></li>
+                    <li><a href="https://github.com/machadodavid32">Github</a></li>
+                    <li>
+                        <a href="#"><span class="lnr lnr-list"></span></a>
+                    </li>
+                    <li><a href="templates\contato.html">Contato</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+    
+        <div class="container"> 
+            <!--banner-->
+            <header>
+                 <link rel="stylesheet" href="{% static 'images/styles.css'%}">
+                <div class="banner">
+                    <div class="box-container">
+                        <div class="box-background"></div>
+                        <div class="box-banner-title">
+                            <h1>David Machado</h1>
+                            <p>Desenvolvedor</p>
+                        </div>
+                    </div>
+                    <div class="company-info-container">
+                        <div class="company-info-background"></div>
+                        <div class="company-info-titlebox">
+                            <h2>Seja bem-vindo</h2>
+                            <p>Aqui você encontra alguns dos meus trabalhos que monstram um pouco mais sobre meu conhecimento</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Seção de serviços-->
+            <section>
+                <div class="services-container">
+                    <div class="service-box">
+                        <div class="service-title" id="gerenciamento-box">
+                            <P>Sobre mim</P>                            
+                        </div>
+                        <div class="service-description" id="gerenciamento-title">
+                            <h3><a href="templates/sobremim.html">Meus Conhecimentos</a></h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy 
+                                text ever since the 1500s.</p>
+                                <h1>{{ 'teste' }}</h1>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-title" id="dev-box">
+                            <P>Curriculo</P>                            
+                        </div>
+                        <div class="service-description" id="dev-title">
+                            <h3><a href="#">Baixar</a></h3>   
+                            <p>Minha experiência no mundo da programação. Baixe em PDF.</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-title" id="designe-box">
+                            <P>Meus Projetos</P>                            
+                        </div>
+                        <div class="service-description" id="gerenciamento-title">
+                            <h3><a href="meus-projetos.html">Entre e Confira!</a></h3>
+                            <p>Utilizando a linguagem de programação.....</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+            <!--Seção sobre a empresa-->
+            <div class="footer-container">
+                <section>
+                    <div class="about-container">
+                        <div class="about-card">
+                            <i class="fas fa-server"></i>
+                            <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy 
+                                text ever since the 1500s</p>
+                        </div>
+
+                       <div class="about-card middle-card">
+                            <i class="fas fa-briefcase"></i>
+                            <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy 
+                                text ever since the 1500s</p>
+                        </div>
+
+                        <div class="about-card">
+                            <i class="fas fa-tablet-alt"></i>
+                            <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy 
+                                text ever since the 1500s</p>
+                        </div>
+
+                    </div>
+                </section>
+                <footer>
+                    <div class="form-container">
+                        <div class="form-background"></div>
+                        <form action="https://formsubmit.co/machadodavid32@gmail.com" method="POST">  <!--Aqui usei o serviço formsubmit-->
+                            <input type="text" name="name" id="name" placeholder="Nome">
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <textarea name="message" id="message" placeholder="Sua Mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright 2022 - David</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
