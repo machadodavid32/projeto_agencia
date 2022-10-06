@@ -3,9 +3,10 @@ from django.urls import path
 from core.views import index, projetos, contato, sobremim
 
 urlpatterns = [
-     path('projetos', projetos),
-     path('contato', contato),
      path('', index),
-     path('sobremim', sobremim)
+     path('contato', contato),
+     path('projetos', projetos),
+     path('sobremim', sobremim),
      
 ]
+

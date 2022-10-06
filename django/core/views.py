@@ -4,10 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    context = {
-        'teste': 'Isso é só um teste'
-    }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 
 def projetos(request):
@@ -15,11 +12,10 @@ def projetos(request):
 
 
 def contato(request):
-    context = {'teste': 'Isso é mais um teste' }
     return render(request,'contato.html')
 
 
 def sobremim(request):
-    return render(request, 'sobremim.html', context)
+    return render(request, 'sobremim.html')
 
 
