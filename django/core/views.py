@@ -1,6 +1,9 @@
 from multiprocessing import context
 from django.shortcuts import render
 
+from .models import Projetos
+
+
 # Create your views here.
 
 def index(request):
@@ -8,7 +11,10 @@ def index(request):
 
 
 def projetos(request):
-    return render(request, 'meus-projetos.html')
+    proj = Projetos.objects.all()
+    context = {'proj': proj}
+
+    return render(request, 'meus-projetos.html', context)
 
 
 def contato(request):

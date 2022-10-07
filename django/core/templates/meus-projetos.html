@@ -1,4 +1,6 @@
- <!--exclamação mais tab abre toda a estrutura de inicio-->
+{% load static %}
+
+<!--exclamação mais tab abre toda a estrutura de inicio-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,7 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
-    <link rel="stylesheet" href="css/meus-projetos.css">
+    <link rel="stylesheet" href="{% static 'css/meus-projetos.css' %}">
+    <h1>Projetos</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for projeto in proj %}
+            <tr>
+                <td>{{ projeto.nome }}</td>
+                <td>{{ projeto.desc }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>       
+    </table>
+
 </head>
 <body>
     <h1>Teste</h1>
